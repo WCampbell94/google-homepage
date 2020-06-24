@@ -3,32 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Google Homepage</title>
 
     <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-items: space-between;
+            overflow: hidden;
+        }
 
         nav {
+            flex: 1;
+            justify-self: flex-start;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             height: 30px;
             flex-direction: row;
-            
+            padding-top: 7px;
         }
 
         .nav-left {
             display: flex;
-            justify-content: space-around;
-            width: 15%;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 9.5%;
         }
 
         .nav-right {
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
             width: 25%;
+        }
+        .sign-in {
+            display: flex;     
+            justify-content: center;       
+            align-items: center;
+            border-radius: 3px;
+            overflow: hidden;
+            background-color: rgb(78, 139, 231);
+            color: #fff;
+            font-weight: bold;
+            width: 67px;
+            height: 28px;
+        }
+        a {
+            padding: 1px;
+            text-decoration: none;
+            color: #333333;
+            font-family: sans-serif;
+            font-size: 13px;
         }
 
         .container {
-            height: 95vh;
+            flex: 2;
+            margin-top: 125px;
+            align-self: center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -39,26 +73,80 @@
             padding: 25px;
         }
 
-        .btns {
+        .search-container {
+            display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            overflow: hidden;   
+            margin-bottom: 30px; 
+            border: 1px solid #d0d0d0;  
+            height: 45px;
+            width: 475px;          
+            border-radius: 150px;
+        }
+
+        #search {
+            border: none;
+            height: 25px;
+            background-color: transparent;
+            border-color: transparent;
+            width: 375px;
+        }
+        
+        #search:focus {
+            outline: none;
+            height: 25px;
+            background-color: transparent;
+            border-color: transparent;
+            width: 375px;
+        }
+
+        
+        .btns {
+            flex: 3;
+            flex-direction: row;
+            align-content: space-between;
+            margin: auto;
+        }
+
+        .btn {
+            
+            height: 30px;
+            width: 400px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ebebeb;
+            padding: 10px  15px;
+            margin: 10px;
         }
 
         footer {
-            height: 30px;
+            
+            margin: 16px 0px 0px -6px;
+            padding: 12px 6px;
+            border-top: 1px solid #e9e9e9;
+            height: 25px;
+            width: 100vw;
             display: flex;
             flex-direction: row;
             background-color: #f2f2f2;
             justify-content: space-between;
         }
 
+        footer a {
+            font-size: 14px;
+        }
+
         .footer-left {
-            width: 33%;
+            width: 26%;
+            
             display: flex;            
             justify-content: space-evenly;
         }
 
          .footer-right {
-            width: 33%;
+            width: 19%;
             display: flex;
             justify-content: space-evenly;
         }
@@ -75,7 +163,7 @@
             <div class="nav-right">
                 <a class="nav-link" href="#">Gmail</a>
                 <a class="nav-link" href="#">Images</a>
-                <a class="" href="#">Apps</a>
+                <a class="fa fa-th" href="#"></a>
                 <a class="sign-in" href="#">Sign in</a>
             </div>
         </nav>
@@ -86,13 +174,14 @@
     <div class="container">
         <img id="img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"
         <form>
-            <div class="search-container" style="display: flex;">
-                <div class="search">Icon</div>
+            <div class="search-container">
+                <i class="fa fa-search"></i>
                 <input type="search" id="search" name="search" required>
+                <i class="fa fa-microphone"></i>
             </div>
             <div class="btns">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
+                <a class="btn" href="#">Google Search</a>
+                <a class="btn" href="#">I'm Feeling Lucky</a>
             </div>
         </form>
     </div>
