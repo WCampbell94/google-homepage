@@ -12,8 +12,8 @@ I hope to be posting updates as the come to this though so stay tuned!
 
 ## And its finally done
 
-I was surprised how mucht trouble the styling actually caused me. Ovarall not to bad though, i spent alot of time fighting with flexbox, and meticulously placing things pixel by pixel.
+I was surprised how much trouble the styling actually caused me. Ovarall not to bad though. I spent alot of time fighting with flexbox, and meticulously moving things pixel by pixel.
 
 The google homepage is not a responsive site so I did have to change some things as it has a scrollbar on smaller screens and i didnt necessarily want that, but mine breaks for smallest screen size also so that needs to be addressed on my end.
 
-I got good practice placing elements, using hover effects, and using forms.
+I got good practice placing elements, using hover effects, box-shadows, and using/manipulating forms.
